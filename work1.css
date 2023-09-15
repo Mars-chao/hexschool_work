@@ -120,6 +120,12 @@ a{
     font-weight: 700;
     line-height: 150%; /* 24px */
   }
+
+  .menu a:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding-top: 23px;
+    padding-bottom: 20px;
+  }
   
   .homepage a{
     border-bottom: 3px solid #0c9;
