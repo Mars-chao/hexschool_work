@@ -1,0 +1,528 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+a{
+  text-decoration: none;
+}
+*{
+  box-sizing:border-box;
+  font-family: "微軟正黑體";
+}
+img{
+  max-width: 100%;
+  height: auto;
+}
+/* css reset */
+.header{
+  background: #f6f6f8;
+}
+.topBar{
+  width: 960px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: end;
+}
+.topBar > ul{
+  display: flex; 
+  align-items: center;
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+.topBar > ul > li{
+  padding: 6px;
+}
+.topBar > img{
+  padding-right: 5px;
+}
+.fb{
+  color: #4267B2;
+  cursor: pointer;
+}
+.fb > span{
+  padding-right: 10px;
+  border-right: 1px solid #ccc;
+  color: #4267B2;
+  font-family: Microsoft JhengHei UI;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+}
+.twitter{
+  color: #1DA1F2;
+  cursor: pointer;
+}
+.banner{
+  background: #fff;                                 
+}
+.menu{
+  margin: 0 auto;
+  width: 960px;
+  display: flex;
+  justify-content: space-between;
+}
+.logo img{
+  margin-top: 18px;
+  margin-bottom: 10px;
+}
+.menu > ul{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.menu > ul > li{
+  margin-left: 20px;
+/*   padding-bottom: 5px; */
+}
+.menuSection a{
+  display: block;
+  color: #00251A;
+  font-weight: 700;
+  line-height: 150%; /* 24px */
+  padding-top: 23px;
+  padding-bottom: 20px; 
+}
+
+.menu  a:hover{
+  opacity: 0.5;
+/*   padding-top: 23px;
+  padding-bottom: 20px; */
+}
+
+.homepage a{
+  border-bottom: 3px solid #0c9;
+/*   padding-top: 23px;
+  padding-bottom: 20px; */
+}
+.product.active{
+  opacity: 0.7;
+  color: red;
+}
+
+.dropdownOpenProduct li{
+  display: none;
+  width: 70px;
+}
+.dropdownOpenProduct li a{
+  color: #004977;
+  line-height: 120%;
+  padding: 10px 0;
+  text-align: center;
+  display: block;
+}
+.dropdownOpenProduct a:hover{
+  color: red;
+  padding: 5px;
+}
+.contract.active{
+  opacity: 0.7;
+  color: red;
+}
+.dropdownOpenContent li{
+  display: none;
+  width: 70px;
+}
+.dropdownOpenContent li a{
+  color: #004977;
+  line-height: 120%;
+  padding: 10px 0;
+  text-align: center;
+  display: block;
+}
+.dropdownOpenProduct a:hover{
+  color: red;
+  padding: 5px;
+}
+
+.wrap{
+  position: relative;
+}
+.title{
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.15);
+  
+}
+.title p{
+  color: #1E1E1E;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 120%;
+  padding-left: 20%;
+}
+
+.topic{
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+    width: 960px;
+  margin: 0 auto;
+}
+.topic > li{
+  margin-top: 60px;
+  margin-left: 15px;
+  margin-left: 15px;
+  width: 33.33%;
+  border-radius: 5px;
+  background: #FFF;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.16);
+  text-align: center;
+}
+.topic > li > p{
+  text-align: left;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  margin-top: 12px;
+  color: #000;
+  font-family: Microsoft JhengHei UI;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+}
+.topic h2{
+  color: #000;
+  text-align: center;
+  font-family: Microsoft JhengHei UI;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 24px */
+
+}
+.jquerySection{
+  margin-top: 60px;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+.jqueryContent{
+  text-align: left;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  margin-top: 12px;
+  color: #000;
+  font-family: Microsoft JhengHei UI;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+}
+.jqueryContent > ul > li{
+  display:block;
+  text-align: left !important;
+  margin-left: 20px;
+  color: #000;
+  font-family: Microsoft JhengHei UI;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+}
+
+.table{
+  width: 960px;
+  margin: 0 auto;
+  padding: 0 100px;
+}
+
+table{
+  width: 100%;
+}
+
+.comparsion{
+  margin-top: 60px;
+  margin-bottom: 25px;
+  text-align: center;
+  color: #000;
+  font-family: Microsoft JhengHei UI;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 28.8px */
+}
+
+
+.compareTable th, .compareTable td{
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  
+}
+.compareTable th{
+  color: #000;
+  font-family: Microsoft JhengHei UI;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 24px */
+  text-align: left;
+  padding: 10px 20px;
+}
+.change{
+  color: #0C9!important;
+  font-family: Microsoft JhengHei UI;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700!important;
+  line-height: 150%; /* 24px */
+}
+.compareTable td{
+  padding: 10px 20px;
+  color: #000;
+  font-family: Microsoft JhengHei UI;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  text-align: left;
+  
+/*   line-height: 150%; 24px */
+}
+
+.formHeader{
+  color: #00251A;
+  text-align: center;
+  font-family: Microsoft JhengHei UI;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 28.8px */
+  margin-top: 20px;
+  padding-top: 30px;
+  margin-top: 30px;
+  margin-bottom: 25px;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form{
+    background: linear-gradient(180deg, #E4FFF8 0%, #A2DDCE 100%);
+}
+.sheet{
+  width: 960px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+
+}
+
+.form input{
+  width: 350px;
+}
+.personal{
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.personal label{
+  margin-bottom: 10px;
+  margin-top: 10px;
+/*   margin-bottom: 5px; */
+  color: #00251A;
+  font-family: Microsoft JhengHei UI;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 19.2px */
+}
+.personal input{
+  height: 40px;
+  font-size: 16px;
+  font-weight: 400;
+}
+.Message{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  padding: 10px;
+}
+.Message label{
+  margin: 10px;
+  color: #00251A;
+  font-family: Microsoft JhengHei UI;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 19.2px */
+}
+#message{
+  height: 200px;
+  width: 350px;
+}
+#submit{
+  border-radius: 3px;
+  border: 1px solid #00251A;
+  background: #00251A;
+  color: #FFF;
+  text-align: center;
+  font-family: Microsoft JhengHei UI;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 19.2px */
+  width: 160px;
+  height: 40px;
+  margin-bottom: 35px;
+  margin-top: 30px;
+  cursor: pointer;
+}
+.footer{
+  display: flex;
+  width: 960px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+.footerContent p{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #000;
+  font-family: Microsoft JhengHei UI;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+}
+.footerContent p a{
+  color: #0C9;
+  font-family: Microsoft JhengHei UI;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
