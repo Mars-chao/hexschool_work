@@ -159,8 +159,7 @@ img {
 .topBar>ul {
   display: flex;
   align-items: center;
-  margin-top: 6px;
-  margin-bottom: 6px;
+  margin: 6px 0;
 }
 
 .topBar>ul>li {
@@ -205,8 +204,7 @@ img {
 }
 
 .logo img {
-  margin-top: 18px;
-  margin-bottom: 10px;
+  margin: 15px 0;
 }
 
 .menu>ul {
