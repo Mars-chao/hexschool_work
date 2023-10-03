@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="六角學院線上課程, 前端網站學習, 基礎教學">
+    <meta name="keywords" content="六角學院, 線上課程, 前端學習">
+    <meta property="og:title" content="六角學院" />
+    <meta property="og:description" content="讓您奠定良好的前端基礎">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="FB上的網址" />
+    <meta property="og:image" content="FB的圖片" />
+
+    <title>jQuery 最終作業</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/RWD.css">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1><a href="#">六角西餐廳</a></h1>
+            <ul>
+                <li><a href="#">首頁</a></li>
+                <li><a href="#">線上點餐</a></li>
+                <li><a href="#">登入</a></li>
+            </ul>
+            <i class="fa-solid fa-bars"></i>
+        </nav>
+        <div class="wrap"></div>
+    </header>
+    <main>
+
+        <div class="topic">
+            <h2>客人總是在詢問<br>這麼好吃的秘訣是什麼</h2>
+        </div>
+
+        <div class="content">
+            <ul>
+                <li>
+                    <img src="https://upload.cc/i1/2023/09/29/Cc4Yg0.png" alt="feature1">
+                    <h3>台灣本土蔬菜</h3>
+                    <p>In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat aliquam. Integer et
+                        elit eget elit facilisis tristique. Nam vel iaculis mauris.</p>
+                </li>
+                <li>
+                    <img src="https://upload.cc/i1/2023/09/29/AMWKze.png
+      " alt="feature2">
+                    <h3>專業米其林廚師</h3>
+                    <p>Sed ullamcorper tellus erat, non ultrices sem tincidunt euismod. Fusce rhoncus porttitor velit,
+                        eu bibendum nibh aliquet vel. Fusce lorem leo, vehicula at nibh quis, facilisis accumsan turpis.
+                    </p>
+                </li>
+                <li>
+                    <img src="https://upload.cc/i1/2023/09/29/hyDFrk.png
+      " alt="feature3">
+                    <h3>對於專業不能退讓</h3>
+                    <p>Fusce rhoncus porttitor velit, eu bibendum nibh aliquet vel. Fusce lorem leo, vehicula at nibh
+                        quis, facilisis accumsan turpis.</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="container">
+            <div class="chief">
+                <img src="https://upload.cc/i1/2023/09/29/JcZrkl.png
+      " alt="chief-photo">
+                <div class="introduce">
+                    <h3>今日主廚：帕金森、梅在帕</h3>
+                    <h4>Tody Chef: Plum in Shock</h4>
+                    <p>Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros eget libero posuere vulputate.
+                        Etiam elit elit, elementum sed varius at, adipiscing vitae est. Sed nec felis pellentesque,
+                        lacinia dui sed, ultricies sapien. Pellentesque orci lectus, consectetur vel posuere posuere,
+                        rutrum eu ipsum. Aliquam eget odio sed ligula iaculis consequat at eget orci. Mauris molestie
+                        sit amet metus mattis varius. Donec sit amet ligula eget nisi sodales egestas. Aliquam interdum
+                        dolor aliquet dolor sollicitudin fermentum. Donec congue lorem a molestie bibendum.</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="feedback">
+            <h2>聽聽別人的感想</h2>
+            <ul>
+                <li>
+                    <img src="https://upload.cc/i1/2023/09/29/7dPxuz.png
+      " alt="avator1">
+                    <div class="message">
+                        <h4>高雄一口吃</h4>
+                        <p>自從吃了這家餐廳以後，我口水連續流了一個多月都沒停，下次不要再被我遇到，不然我一定連他們桌子都啃下去。</p>
+                        <span>-- 產品經理</span>
+                    </div>
+
+                </li>
+                <li>
+                    <img src="https://upload.cc/i1/2023/09/29/yHmFXf.png
+      " alt="avatar2">
+                    <div class="message">
+                        <h4>廟口小霸王</h4>
+                        <p>自從吃了這家餐廳以後，我口水連續流了一個多月都沒停，下次不要再被我遇到，不然我一定連他們桌子都啃下去。</p>
+                        <span>-- 金身道士</span>
+                    </div>
+
+                </li>
+                <li>
+                    <img src="https://upload.cc/i1/2023/09/29/SKvYTc.png
+      " alt="avatar3">
+                    <div class="message">
+                        <h4>春天也來了</h4>
+                        <p>自從吃了這家餐廳以後，我口水連續流了一個多月都沒停，下次不要再被我遇到，不然我一定連他們桌子都啃下去。</p>
+                        <span>-- 美麗萬分</span>
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+        <div class="booking">
+            <h2>我們的位置不太夠坐<br>要不要先定位呢 ?</h2>
+            <div class="order">
+                <img src="https://upload.cc/i1/2023/09/29/mo2aRA.png" alt="map">
+                <form>
+                    <label for="name">姓名</label>
+                    <input type="text" id="name" name="name" placeholder="請輸入姓名">
+                    <label for="phone">電話</label>
+                    <input type="tel" id="phone" name="phone" placeholder="請輸入電話號碼">
+                    <label for="mail">信箱</label>
+                    <input type="email" id="mail" name="mail" placeholder="請輸入信箱">
+                    <label for="num">人數</label>
+                    <input type="number" id="num" name="number" placeholder="請輸入人數">
+                    <label for="vegetarian">是否需要素食</label>
+                    <div class="radio">
+                        <label for="veg-yes">是</label>
+                        <input type="radio" id="veg-yes" name="veg" value="true" checked>
+                        <label for="veg-no">否</label>
+                        <input type="radio" id="veg-no" name="veg" value="false">
+                    </div>
+                    <div class="button">
+                        <button type="button">取消</button>
+                        <button type="submit">送出</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+
+    </main>
+    <footer>
+        <div class="footerContent">
+            <div class="aboutInfo">
+                <div>
+                    <h4>關於 六角西餐廳</h4>
+                    <p>Curabitur lobortis id lorem id bibndum. Ut id <br>
+                        consectetur magna. Quisque volutpat augue<br>
+                        enim, pulvinar lobortis nibh lacinia at.</p>
+                </div>
+                <div class="contract">
+                    <h4>聯絡方式</h4>
+                    <ul>
+                        <li>高雄市中正五路到底</li>
+                        <li><a href="tel: +886 912345796">+886 912345796</a></li>
+                        <li><a href="mailto: service@hexschool.com">service@hexschool.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="link">
+                <h3><a href=""></a>六角西餐廳</h3>
+                <ul>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
