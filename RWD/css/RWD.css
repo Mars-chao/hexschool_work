@@ -61,7 +61,7 @@ a {
   nav li a:hover::after {
     width: 100%;
   }
-  i {
+  nav > i::before, nav i {
     display: none;
   }
   .wrap {
