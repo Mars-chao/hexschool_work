@@ -38,7 +38,7 @@ a {
     position: relative;
   }
   nav h1 a {
-    font-size: 24px;
+    font-size: 26px;
     font-weight: bold;
     text-align: center;
   }
@@ -85,6 +85,7 @@ a {
     background: rgba(0,0,0,0.35);
     width: 460px;
     height: 150px;
+    font-size: 20px;
   }
   .wrapContent p{
     font-size: 20px;
