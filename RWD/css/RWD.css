@@ -502,3 +502,86 @@ a {
   max-width: 100%;
   width: 250px;
 }
+
+
+/* cart頁面 */
+.cart{
+  display:flex;
+  margin: 0 auto;
+  width: 1024px;
+}
+/* 左側選單 */
+.categories{
+  margin-top: 40px;
+  width: 25%;
+}
+.categories h3{
+  font-size: 22px;
+  color: #3D1101;
+  line-height: 32px;
+}
+.categories li{
+  padding: 5px;
+  border-bottom: 2px solid #3d1101;
+}
+.categories li > a{
+  font-size: 20px;
+  line-height: 1.2;
+  color: #3d1101;
+}
+.hamburger{
+  background:#3D1101;
+}
+.categories .hamburger a{
+  color: white;
+}
+
+/* 右側資訊列 */
+.cartContent{
+  width: 75%;
+}
+.contentTopBar{
+  display: flex;
+  justify-content: space-around;
+  margin: 40px;
+}
+.search{
+  display: flex;
+  border: 1px solid #3D1101;
+}
+.search input{
+  width: 460px;
+}
+.search a{
+  background: #3d1101;
+  font-size: 18px;
+  display: block;
+  padding: 4px;
+}
+
+.shoppingCar{
+  display: flex;
+  align-items: center;
+}
+.shoppingCar a{
+  padding: 5px;
+  display: block;
+  border-right: 1px solid #3d1101;
+  color: #3d1101;
+  font-size: 18px;
+}
+.shoppingCar i{
+  padding: 5px;
+  position: relative;
+  font-size: 20px;
+}
+.shoppingCar i span{
+  position: absolute;
+  top: -10px;
+  right: -5px;
+  background: #FF5E45;
+  border-radius: 50%;
+  padding: 5px;
+  color: #fff;
+  font-size: 10px;
+}
