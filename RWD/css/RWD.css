@@ -25,6 +25,7 @@ a {
     justify-content: space-around;
     align-items: center;
     z-index: 10;
+    height: 60px;
   }
   nav a {
     color: white;
@@ -43,7 +44,7 @@ a {
     text-align: center;
   }
   nav li a {
-    padding: 10px;
+    padding: 15px;
   }
   nav li a:hover {
     opacity: 0.8;
@@ -52,8 +53,8 @@ a {
   nav li a::after {
     content: " ";
     position: absolute;
-    border-bottom: 3px solid white;
-    top: 30px;
+    border-bottom: 4px solid white;
+    top: 37px;
     width: 0%;
     left: 0px;
     transition: all 0.5s;
@@ -123,10 +124,17 @@ a {
       margin: 5px 0;
     }
     .menu li a{
-      padding: 4px 3px;
+      padding: 2px 3px;
       display: block;
       text-align: center;
       margin: 10px 0;
+    }
+    nav li a:hover{
+      color: gray;
+      font-weight: bold;
+    }
+    nav li a:hover::after{
+      width: 0%;
     }
     .menu.toggle{
       max-height: 120px;
@@ -508,12 +516,12 @@ a {
 .cart{
   display:flex;
   margin: 0 auto;
-  width: 1024px;
+  max-width: 1024px;
 }
 /* 左側選單 */
 .categories{
-  margin-top: 40px;
-  width: 25%;
+  margin: 40px 10px 0 10px;
+  max-width: 25%;
 }
 .categories h3{
   font-size: 22px;
@@ -521,13 +529,14 @@ a {
   line-height: 32px;
 }
 .categories li{
-  padding: 5px;
-  border-bottom: 2px solid #3d1101;
+  padding: 10px;
+  border-bottom: 1px solid #3d1101;
 }
 .categories li > a{
   font-size: 20px;
   line-height: 1.2;
   color: #3d1101;
+  display: block;
 }
 .hamburger{
   background:#3D1101;
@@ -538,19 +547,19 @@ a {
 
 /* 右側資訊列 */
 .cartContent{
-  width: 75%;
+  max-width: 75%;
 }
 .contentTopBar{
   display: flex;
-  justify-content: space-around;
-  margin: 40px;
+  justify-content: space-between;
+  margin: 15px;
 }
 .search{
   display: flex;
   border: 1px solid #3D1101;
 }
 .search input{
-  width: 460px;
+  width: 420px;
 }
 .search a{
   background: #3d1101;
@@ -584,4 +593,193 @@ a {
   padding: 5px;
   color: #fff;
   font-size: 10px;
+}
+.card{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.card li{
+  max-width: 30%;
+  margin: 0 0 20px 10px;
+  box-shadow: 3px 3px 4px 0px rgba(0, 0, 0, 0.16);
+  position: relative;
+}
+.fa-regular.fa-heart{
+  color: white;
+  position: absolute;
+  left: 13px;
+  top: 2px;
+  z-index: 2;
+  font-size: 20px
+}
+.menuImg{
+  position: relative;
+  overflow: hidden;
+  top: -6px;
+  right: -6px;
+}
+.menuImg {
+  padding: 0 5px 0 0 ;
+}
+.menuImg span{
+  position: absolute;
+  top: 15px;
+  right: -32px;
+  transform: rotate(45deg);
+  width: 120px;
+  height: 24px;
+  background: #0c9;
+  color: white;
+  font-size: 14px;
+  text-align: center;
+  line-height: 25px;
+}
+.card-body{
+  padding: 10px;
+}
+.card-body h4{
+  text-align: center;
+  font-size: 20px;
+  color: #3D1101;
+  padding-bottom: 5px;
+
+  
+}
+.card-body h4::before{
+  content: '';
+  position: absolute;
+  bottom: 37%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 92px;
+  height: 1px;
+  background: #3d1101;
+}
+
+.card-body .egmenu{
+  text-align: center;
+  font-size: 12px;
+  color: #3d1101;
+  margin-bottom: 15px;
+}
+.card-body .price{
+  text-align: center;
+  color:#3D1101 ;
+  font-size: 20px;
+  padding: 10px;
+  font-weight: bold;
+}
+.card-body button{
+  border: 1px solid #FF5E45;
+  border-radius: 3px;
+  color: #ff5e45;
+  font-size: 16px;
+  width: 100%;
+}
+.card-body button:hover{
+  color: white;
+  cursor: pointer;
+  background: #FF5E45;
+}
+/* 響應式 */
+@media (max-width: 768px) {
+  .categories{
+    margin: 10px;
+    max-width: 30%;
+  }
+  .cartContent{
+    max-width: 70%;
+  }
+  .contentTopBar{
+    margin: 10px;
+  }
+  .search{
+    max-width: 70%;
+  }
+  .search input{
+    max-width: 100%;
+  }
+  .card li{
+    margin: 5px;
+    max-width: 30%;
+  }
+  .card-body .egmenu{
+    font-size: 10px;
+
+  }
+  .card-body h4::before{
+    bottom: 40%;
+  }
+  .card-body button{
+    font-size: 12px;
+
+  }
+}
+/* 響應式 小於576px */
+@media (max-width: 576px){
+  .cart{
+    display: block;
+  }
+  .categories{
+    max-width: 100%;
+    margin-bottom: 25px;
+  }
+  .cartContent{
+    max-width: 100%;
+  }
+  .contentTopBar{
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+  }
+  .shoppingCar{
+    justify-content: end;
+  }
+  .cart{
+    flex-wrap: wrap;
+  }
+  .card li{
+    max-width: 100%;
+    margin: 15px auto;
+  }
+  .card-body h4{
+    text-align: center;
+    font-size: 24px;
+    color: #3D1101;
+    padding-bottom: 5px;
+  }
+  .card-body h4::before{
+    content: '';
+    position: absolute;
+    bottom: 32%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 92px;
+    height: 1px;
+    background: #3d1101;
+  }
+  
+  .card-body .egmenu{
+    text-align: center;
+    font-size: 20px;
+    color: #3d1101;
+    margin-bottom: 15px;
+  }
+  .card-body .price{
+    text-align: center;
+    color:#3D1101 ;
+    font-size: 20px;
+    padding: 10px;
+    font-weight: bold;
+  }
+}
+@media (max-width: 375px){
+  .contentTopBar{
+    justify-content: end;
+  }
+  .search{
+    max-width: 100%;
+    margin-bottom: 15px;
+  }
 }
