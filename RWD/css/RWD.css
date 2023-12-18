@@ -144,6 +144,7 @@ a {
       background-image: url(../img/header_mobile.png);
       background-size: cover;
       background-repeat: no-repeat;
+      background-position: center;
       max-width: 100%;
     }
     .wrapContent{
@@ -420,6 +421,9 @@ a {
     list-style: inside;
     padding-top: 5px;
   }
+  .contract a{
+    color: #3d1101;
+  }
   .link h3{
     background-image: url(../img/logo_l@svg.svg);
     text-indent: 101%;
@@ -473,14 +477,11 @@ a {
 }
 .loginInfo{
   border-top: 3px solid #ff5e45;
-  display: flex;
-  flex-direction: column;
-  /* justify-content: center; */
   background: #EFE9E7;
   box-shadow: 3px 3px 4px 0px rgba(0,0,0,0.16);
-  padding: 5px 10px;
+  padding: 15px 20px;
   width: 300px;
-  height: 270px;
+  /* height: 270px; */
 }
 .loginInfo h3{
   margin: 20px 0;
@@ -501,6 +502,11 @@ a {
   top: 15px;
   left: 12px;
 }
+.fa-solid.fa-lock.second{
+  position: absolute;
+  top: 63px;
+  left: 12px;
+}
 .loginInfo label, .loginInfo input{
   margin: 5px;
 }
@@ -509,6 +515,95 @@ a {
   padding-left: 25px;
   max-width: 100%;
   width: 250px;
+}
+.forgotPwd{
+  color: #ff5e45;
+  margin-bottom: 30px;
+  display: block;
+}
+.registerButton{
+  background: rgba(0,0,0,0.35);
+  border-radius: 3px;
+  color: white;
+  cursor: pointer;
+  width: 48%;
+  text-align: center;
+  padding: 5px;
+  display: inline-block;
+}
+.registerButton:hover{
+  background: #3d1101;
+}
+.loginButton{
+  background: #F56C23;
+  border-radius: 3px;
+  color: white;
+  cursor: pointer;
+  width: 48%;
+  text-align: center;
+  padding: 5px;
+  display: inline-block;
+}
+
+/* register 頁面 */
+.registerPage{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+}
+.registerPageInfo{
+  width: 50%;
+  border-top: 3px solid #ff5e45;
+  background: #EFE9E7;
+  box-shadow: 3px 3px 4px 0px rgba(0,0,0,0.16);
+  padding: 15px 20px;
+
+}
+.infoContainer{
+  display: flex;
+  justify-content:space-evenly;
+}
+.infoContainer > p{
+  width: 65%;
+  line-height: 2;
+}
+
+.registerPageInfo h3{
+  margin: 20px 0;
+  text-align: center;
+  font-size: 24px;
+  color: #3d1101;
+}
+.registerPageInfo label, .registerPageInfo input{
+  margin: 5px;
+}
+.registerPageInfo input{
+  padding: 10px 0;
+  padding-left: 25px;
+  /* max-width: 100%; */
+  width: 100%;
+}
+.checkAccount{
+  color: #ff5e45;
+  margin: 10px 0 30px 0;
+  display: block;
+}
+.infoContainer .submitButton a{
+  margin-left: auto;
+  display: block;
+}
+.loginButton:hover{
+  background:#3d1101;
+}
+/* 註冊 響應式網站 */
+@media (max-width: 768px){
+  .infoContainer{
+    display: block;
+  }
+  .infoContainer > p{
+    width: 100%;
+  }
 }
 
 
