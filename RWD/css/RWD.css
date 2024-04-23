@@ -101,7 +101,7 @@ a {
 
 
   /* 響應式 */
-  @media (max-width: 768px) {
+  @media (max-width: 800px) {
     .icon{
       display: block;
       color: #fff;
@@ -221,7 +221,7 @@ a {
     /*   padding: 5px 30px; */
   }
   
-  @media (max-width: 768px) {
+  @media (max-width: 800px) {
     .topic h2::before,
     .topic h2::after {
       display: none;
@@ -268,7 +268,7 @@ a {
     font-style: normal;
   }
   
-  @media (max-width: 768px) {
+  @media (max-width: 800px) {
     .chief {
       flex-wrap: wrap;
       width: 100%;
@@ -319,7 +319,7 @@ a {
     opacity: 0.75;
   }
   
-  @media (max-width: 768px) {
+  @media (max-width: 800px) {
     .feedback ul {
       width: 100%;
       flex-wrap: wrap;
@@ -375,7 +375,7 @@ a {
     background: #f56c23;
     border-radius: 3px;
   }
-  @media (max-width: 768px) {
+  @media (max-width: 800px) {
     .order {
       flex-direction: column;
       align-items: center;
@@ -442,7 +442,7 @@ a {
     padding: 5px;
   }
 
-  @media(max-width: 768px){
+  @media(max-width: 800px){
     .footerContent{
       flex-wrap: wrap;
     }
@@ -598,7 +598,7 @@ a {
   background:#3d1101;
 }
 /* 註冊 響應式網站 */
-@media (max-width: 768px){
+@media (max-width: 800px){
   .infoContainer{
     display: block;
   }
@@ -780,7 +780,7 @@ a {
   background: #FF5E45;
 }
 /* 響應式 */
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .categories{
     margin: 10px;
     max-width: 30%;
