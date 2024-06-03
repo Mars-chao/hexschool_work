@@ -148,7 +148,20 @@ a {
       max-width: 100%;
     }
     .wrapContent{
-      display: none;
+      position: absolute;
+      top: 40%;
+      left: 15%;
+      right: 15%;
+    }
+  }
+  @media (max-width: 576px){
+    .wrapContent{
+      width: 300px;
+    }
+  }
+  @media(max-width: 375px){
+    .wrapContent{
+      width: 250px;
     }
   }
   /* 全體顏色設定 */
@@ -447,10 +460,20 @@ a {
       flex-wrap: wrap;
     }
     .aboutInfo{
+      display: flex;
       margin-bottom: 20px;
     }
-    .link{
+
+    /* .link{
       display: none;
+    } */
+  }
+  @media(max-width: 576px){
+    .aboutInfo{
+      display: block;
+    }
+    .contract{
+      margin-left: 0;
     }
   }
 
